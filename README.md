@@ -31,7 +31,7 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 
 Summary:
 
-- Distributions are skewed to the right suggesting many outliers
+- Distributions are skewed to the left and right suggesting many outliers
 - Average Applicant Income for approved and rejected loans are about the same.
 - Those who are approved had either zero or ~ 2500 of Coapplicant income.
 - Requested loan amounts for approved and rejected loans are equal on average
@@ -50,3 +50,7 @@ Summary
 
 ### Model Development
 ***
+
+    clf1 = LogisticRegression(random_state=1)
+    clf2 = RandomForestClassifier(random_state=1)
+    clf3 = XGBClassifier(random_state=1)   
