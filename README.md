@@ -14,4 +14,4 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 
 ### 1.EDA
 
-    ![proportion](https://user-images.githubusercontent.com/26305084/116580358-4a255280-a8e1-11eb-8ebd-35378cc2c8c3.jpeg)
+   ![proportion](https://user-images.githubusercontent.com/26305084/116580358-4a255280-a8e1-11eb-8ebd-35378cc2c8c3.jpeg)
