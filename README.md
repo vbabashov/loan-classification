@@ -120,7 +120,10 @@ Optimize Precision When:
 
 Given the confusion matrix, there seem to be more false negatives than true negatives, so it might be worthwhile to optimize the Recall, provided that mortgage defaults are of concern.
 
-        array([[17, 21],
-               [ 4, 81]])
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/26305084/116604965-d133f400-a8fc-11eb-9157-147d3bfe5404.jpeg" />
+</p>
+
 
 As a future work, I can do feature engineering and use a different hyperparameter tuning technique (e.g., Random Search or Bayesian Optimization) which can potentially result in better classification model.
