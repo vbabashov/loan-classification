@@ -63,14 +63,16 @@ First, we need to deal with the class imbalance of 70% (Y) and 30% (N) before mo
      N    0.312704
     Name: Loan_Status, dtype: float64
 
-
-
-
 ### Results
 ***
 
 Based on the 5x2CV nested cross-validation, Random Forest Classifier seems to be performing the best. Below ROC graph shows an 52% improvement compared to baseline Dummy Classifier in terms of the AUC score. 
 
+    Fitting 5 folds for each of 5 candidates, totalling 25 fits
+    ROC-AUC 0.90 (average over k-fold CV test folds)
+    Best Parameters: {'n_estimators': 10000}
+    Training ROC-AUC: 1.00
+    Test ROC-AUC: 0.79
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/26305084/116587977-00d90100-a8e9-11eb-857f-c21f91d14dd8.jpeg" />
