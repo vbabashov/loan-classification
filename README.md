@@ -63,7 +63,7 @@ First, we need to deal with the class imbalance of 70% (Y) and 30% (N) before mo
      N    0.312704
     Name: Loan_Status, dtype: float64
 
-To this end, I'll use the imblearn package to apply oversampling (i.e., SMOTE) and undersampling (i.e, RandomUnderSampler) techniques:
+To this end, I'll use the [imblearn](https://imbalanced-learn.org/stable/) package to apply oversampling (i.e., SMOTE) and undersampling (i.e, RandomUnderSampler) techniques:
 
     Original dataset shape Counter({1: 337, 0: 154})
     Oversampled dataset shape Counter({1: 337, 0: 337})
