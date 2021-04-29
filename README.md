@@ -17,7 +17,7 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 
 **Summary** 
 
-- distribution of values for each categorical feature are close given the Loan Status class labels! 
+- distribution of values for each categorical feature are close given the loan status class labels! 
 - credit History seems to have an explanatory power because
 - vast majority (95%+) of rejected applications have no credit history
 - approximately, 80% of approved applications have a prior credit history
@@ -26,13 +26,17 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 
 Summary:
 
+- Distributions are skewed to the right suggesting many outliers
 - Average Applicant Income for approved and rejected loans are about the same.
 - Those who are approved had either zero or ~ 2500 of Coapplicant income.
 - Requested loan amounts for approved and rejected loans are equal on average
 - Loan applications are either for 180 or 360 months term.
 
-     ![map](https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg" />
+</p>
 
+                                    
 Summary
 
 - There is no collinearity between the features
