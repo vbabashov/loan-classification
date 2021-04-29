@@ -45,7 +45,7 @@ Summary:
 Summary
 
 - There is no collinearity between the features
-- Highest correlation coefficient is 0.57 between the Loan Amount and Applicant Income which makes sense
+- Highest correlation coefficient is 0.57 between the Loan Amount and Applicant Income which makes sense.
 
 
 ### Model Development
@@ -73,7 +73,7 @@ To this end, I'll use the [imblearn](https://imbalanced-learn.org/stable/) packa
 ### Results
 ***
 
-Based on the 5x2CV nested cross-validation, Random Forest Classifier seems to be performing the best.  However, model is overfitting the training set.
+Based on the 5x2CV nested cross-validation, Random Forest Classifier seems to be performing the best. However, there is some overfitting.
 
     Fitting 5 folds for each of 5 candidates, totalling 25 fits
     ROC-AUC 0.90 (average over k-fold CV test folds)
