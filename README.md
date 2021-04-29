@@ -31,7 +31,7 @@ Summary:
 - Loan applications are either for less 180 or 360 months term.
 
 
-     ![map](https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg)
+      ![map](https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg)
 
 Summary
 
