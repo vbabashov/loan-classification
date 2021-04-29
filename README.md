@@ -106,7 +106,7 @@ According to the feature importance graph top four features are Credit History, 
 ### Concluding Remarks and Future Direction
 ***
 
-We can also optimize a different metric such as Recall or Precision. It depends on how much cost/weight we want on two types of errors: (1) False Positives or (2) False Negatives What's the cost of having a FN and FP? Do we want to value loss due to revenue  or loss due to mortgage default? This is a business and setting specific goal.
+I can also optimize a different metric such as Recall or Precision. It depends on how much cost/weight we want on two types of errors: (1) False Positives or (2) False Negatives What's the cost of having a FN and FP? Do we want to value loss due to revenue  or loss due to mortgage default? This is a business and setting specific goal.
 
 Optimize Recall When:
 
@@ -118,7 +118,9 @@ Optimize Precision When:
  - You want to limit false positives
 -  FP > FN
 
-Given the confusion matrix, we seem to have more false negatives than true negatives, so it might be worthwhile to optimize the Recall, provided that we are concerned about the mortgage default.
+Given the confusion matrix, there seem to be more false negatives than true negatives, so it might be worthwhile to optimize the Recall, provided that mortgage defaults are of concern.
 
         array([[17, 21],
                [ 4, 81]])
+
+As a future work, we can do feature engineering and use a different hyperparameter tuning technique (e.g., Random Search or Bayesian Optimization) which can potentially result in better classification model.
