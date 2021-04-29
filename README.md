@@ -1,4 +1,4 @@
-![density](https://user-images.githubusercontent.com/26305084/116582282-31b63780-a8e3-11eb-8063-c6c7a15de8a7.jpeg)
+
 # loan-classification
 House Loan Prediction (Python)
 
