@@ -12,6 +12,7 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 
 ### Exploratory Data Analysis (EDA)
 ***
+
    ![proportion](https://user-images.githubusercontent.com/26305084/116580358-4a255280-a8e1-11eb-8ebd-35378cc2c8c3.jpeg)
 
 Summary 
@@ -28,8 +29,7 @@ Summary:
 - Average Applicant Income for approved and rejected loans are about the same.
 - Those who are approved had either zero or ~ 2500 of Coapplicant income.
 - Requested loan amounts for approved and rejected loans are equal on average
-- Loan applications are either for less 180 or 360 months term.
-
+- Loan applications are either for 180 or 360 months term.
 
      ![map](https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg)
 
@@ -39,3 +39,5 @@ Summary
 - Highest correlation coefficient is 0.57 between the Loan Amount and Applicant Income which makes sense
 
 
+### Model Development
+***
