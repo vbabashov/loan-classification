@@ -50,7 +50,7 @@ Summary
 ### Baseline: Dummy Classifier
 ***
 
-I will used ROC-AUC classifcation metric, thus, I will develop DummyClassifier to predict a stratified random class.
+I will use ROC-AUC classifcation metric, thus, I will develop DummyClassifier to predict a stratified random class.
 
     dummy_clf = DummyClassifier(strategy="stratified", random_state=1)
     dummy_clf.fit(X_train, y_train)
