@@ -1,9 +1,7 @@
 # loan-classification
 House Loan Prediction (Python)
 
-
-
-- **Jupyter Notebook: [Model EDA, Training and Testing](https://github.com/vbabashov/loan-classification/blob/main/notebooks/loan_prediction.ipynb)**
+**Jupyter Notebook: [Model EDA, Training and Testing](https://github.com/vbabashov/loan-classification/blob/main/notebooks/loan_prediction.ipynb)**
 
 ### Problem Statement:
 
