@@ -59,4 +59,8 @@ I'll explore the following three classifiers to predict loan eligibility
 
 First, we need to deal with the class imbalance of 70% (Y) and 30% (N) before model development process.
 
+     Y    0.687296
+     N    0.312704
+    Name: Loan_Status, dtype: float64
+
 
