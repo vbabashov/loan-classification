@@ -14,7 +14,7 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 ***
    ![proportion](https://user-images.githubusercontent.com/26305084/116580358-4a255280-a8e1-11eb-8ebd-35378cc2c8c3.jpeg)
 
-Summary: 
+Summary 
 
 - distribution of values for each categorical feature are close given the Loan Status class labels! 
 - credit History seems to have an explanatory power because
@@ -31,7 +31,7 @@ Summary:
 - Loan applications are either for less 180 or 360 months term.
 
 
-      ![map](https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg)
+     ![map](https://user-images.githubusercontent.com/26305084/116581016-ebaca400-a8e1-11eb-80c8-0c319426a659.jpeg)
 
 Summary
 
