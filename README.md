@@ -69,11 +69,14 @@ First, we need to deal with the class imbalance of 70% (Y) and 30% (N) before mo
 ### Results
 ***
 
+Based on the 5x2CV nested cross-validation, Random Forest Classifier seems to be performing the best. Below ROC graph shows an 52% improvement compared to baseline Dummy Classifier in terms of the AUC score. 
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/26305084/116587977-00d90100-a8e9-11eb-857f-c21f91d14dd8.jpeg" />
 </p>
 
+According to the feature importance graph top four features are Credit History, ApplicantIncome, LoanAmount and CoapplicantIncome.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/26305084/116588128-29f99180-a8e9-11eb-865b-9cac6de214db.jpeg" />
