@@ -51,6 +51,8 @@ Summary
 ### Model Development
 ***
 
+I'll explore the following three classifiers to predict loan eligibility
+
     clf1 = LogisticRegression(random_state=1)
     clf2 = RandomForestClassifier(random_state=1)
     clf3 = XGBClassifier(random_state=1)   
