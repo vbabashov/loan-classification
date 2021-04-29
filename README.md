@@ -22,7 +22,7 @@ Summary
 - vast majority (95%+) of rejected applications have no credit history
 - approximately, 80% of approved applications have a prior credit history
 
-![density](https://user-images.githubusercontent.com/26305084/116580653-8e185780-a8e1-11eb-84a2-c77a3e97a17c.jpeg)
+   ![density](https://user-images.githubusercontent.com/26305084/116580653-8e185780-a8e1-11eb-84a2-c77a3e97a17c.jpeg)
 
 Summary:
 
