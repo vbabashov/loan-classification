@@ -47,6 +47,15 @@ Summary
 - There is no collinearity between the features
 - Highest correlation coefficient is 0.57 between the Loan Amount and Applicant Income which makes sense.
 
+### Baseline: Dummy Classifier
+***
+
+I will used ROC-AUC classifcation metric, thus, I will develop DummyClassifier to predict a stratified random class.
+
+    dummy_clf = DummyClassifier(strategy="stratified", random_state=1)
+    dummy_clf.fit(X_train, y_train)
+    roc_auc_score(y_test, dummy_clf.predict_proba(X_test)[:, 1])
+
 
 ### Model Development
 ***
@@ -87,11 +96,15 @@ Below ROC graph shows an 52% improvement compared to baseline Dummy Classifier i
   <img src="https://user-images.githubusercontent.com/26305084/116587977-00d90100-a8e9-11eb-857f-c21f91d14dd8.jpeg" />
 </p>
 
+
 According to the feature importance graph top four features are Credit History, ApplicantIncome, LoanAmount and CoapplicantIncome.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/26305084/116588128-29f99180-a8e9-11eb-865b-9cac6de214db.jpeg" />
 </p>
+
+### Concluding Remarks and Future Direction
+***
 
 
 
