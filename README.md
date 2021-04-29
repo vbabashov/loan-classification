@@ -56,3 +56,7 @@ I'll explore the following three classifiers to predict loan eligibility
     clf1 = LogisticRegression(random_state=1)
     clf2 = RandomForestClassifier(random_state=1)
     clf3 = XGBClassifier(random_state=1)   
+
+First, we need to deal with the class imbalance of 70% (Y) and 30% (N) before model development process.
+
+
