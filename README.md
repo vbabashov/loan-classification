@@ -64,3 +64,20 @@ First, we need to deal with the class imbalance of 70% (Y) and 30% (N) before mo
     Name: Loan_Status, dtype: float64
 
 
+
+
+### Results
+***
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/26305084/116587977-00d90100-a8e9-11eb-857f-c21f91d14dd8.jpeg" />
+</p>
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/26305084/116588128-29f99180-a8e9-11eb-865b-9cac6de214db.jpeg" />
+</p>
+
+
+
