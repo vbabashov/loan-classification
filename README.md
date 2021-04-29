@@ -123,4 +123,4 @@ Given the confusion matrix, there seem to be more false negatives than true nega
         array([[17, 21],
                [ 4, 81]])
 
-As a future work, we can do feature engineering and use a different hyperparameter tuning technique (e.g., Random Search or Bayesian Optimization) which can potentially result in better classification model.
+As a future work, I can do feature engineering and use a different hyperparameter tuning technique (e.g., Random Search or Bayesian Optimization) which can potentially result in better classification model.
