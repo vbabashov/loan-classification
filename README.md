@@ -111,7 +111,6 @@ We can also optimize a different metric such as Recall or Precision. It depends 
 Optimize Recall When:
 
  -  You want to limit false negatives
--   You will get more false Positives
 -   FN > FP
 
 Optimize Precision When:
