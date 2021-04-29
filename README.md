@@ -13,17 +13,16 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 
 ### Exploratory Data Analysis (EDA)
 ***
-
    ![proportion](https://user-images.githubusercontent.com/26305084/116580358-4a255280-a8e1-11eb-8ebd-35378cc2c8c3.jpeg)
 
-***Summary*** 
+**Summary** 
 
 - distribution of values for each categorical feature are close given the Loan Status class labels! 
 - credit History seems to have an explanatory power because
 - vast majority (95%+) of rejected applications have no credit history
 - approximately, 80% of approved applications have a prior credit history
 
-     ![density](https://user-images.githubusercontent.com/26305084/116582282-31b63780-a8e3-11eb-8063-c6c7a15de8a7.jpeg)
+    ![density](https://user-images.githubusercontent.com/26305084/116582282-31b63780-a8e3-11eb-8063-c6c7a15de8a7.jpeg)
 
 Summary:
 
