@@ -106,7 +106,7 @@ According to the feature importance graph top four features are Credit History, 
 ### Concluding Remarks and Future Direction
 ***
 
-I can also optimize a different metric such as Recall or Precision. It depends on how much cost/weight we want on two types of errors: (1) False Positives or (2) False Negatives What's the cost of having a FN and FP? Do we want to value loss due to revenue  or loss due to mortgage default? This is a business and setting specific goal.
+I can also optimize a different metric such as Recall or Precision. It depends on how much cost/weight we want on two types of errors: (1) False Positives or (2) False Negatives. What's the cost of having a FN and FP? Do we want to value loss due to revenue or loss due to mortgage default more? This is a business and setting specific goal.
 
 Optimize Recall When:
 
