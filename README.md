@@ -20,7 +20,7 @@ Dream Housing Finance company provides mortgage lending solutions to home buyers
 **Summary** 
 
 - distribution of values for each categorical feature are close given the loan status class labels! 
-- credit History seems to have an explanatory power because
+- credit history seems to have an explanatory power because
 - vast majority (95%+) of rejected applications have no credit history
 - approximately, 80% of approved applications have a prior credit history
 
