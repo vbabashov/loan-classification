@@ -8,7 +8,7 @@ House Loan Prediction (Python)
 
 Data Source: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/
 
-Dream Housing Finance company provides mortgage lending solutions to home buyers. Using this partial dataset, the company wants to automate the loan eligibility process (in real-time) based on customer information provided while filling and submitting an online application. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To this end, I'll explore three classification models in this notebook. 
+Dream Housing Finance company provides mortgage lending solutions to home buyers. Using this partial dataset, the company wants to automate the loan eligibility process (in real-time) based on customer information provided while filling and submitting an online application. These details include Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To this end, I'll explore three classification models in this notebook. 
 
 
 ### Exploratory Data Analysis (EDA)
@@ -78,6 +78,7 @@ To this end, I'll use the [imblearn](https://imbalanced-learn.org/stable/) packa
     Oversampled dataset shape Counter({1: 337, 0: 337})
     Undersampled dataset shape Counter({0: 154, 1: 154})
 
+I built a base Logistic Regression model and determined that SMOTE technique results in better performance compared to other two techniques.
 
 ### Results
 ***
