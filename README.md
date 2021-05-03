@@ -128,4 +128,4 @@ Given the confusion matrix, there seem to be more false negatives than true nega
 </p>
 
 
-As a future work, I can do feature engineering and use a different hyperparameter tuning technique (e.g., Random Search or Bayesian Optimization) which can potentially result in better classification model. In addition to ROC-AUC, I can optimize model performance with respect to Recall and Balanced Accuracy scores. Finally, I can try stacking several classifiers in aim to improve the model performance.
+As a future work, I can do feature engineering and use a different hyperparameter tuning technique (e.g., Random Search or Bayesian Optimization) which can potentially result in better classification model. In addition to ROC-AUC, I can optimize model performance with respect to Recall and Balanced Accuracy scores. Finally, I can try stacking several classifiers in an aim to improve the model accuracy.
