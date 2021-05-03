@@ -1,6 +1,5 @@
-
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/26305084/116889126-3851f100-abfa-11eb-8c16-87fbf6f02085.jpg" />
+   <img src="https://user-images.githubusercontent.com/26305084/116889276-5f102780-abfa-11eb-8488-e0508c5cccb9.png" />
 </p>
 
 # loan-classification
