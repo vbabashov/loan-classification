@@ -69,7 +69,7 @@ I'll explore the following three classifiers to predict loan eligibility
     clf2 = RandomForestClassifier(random_state=1)
     clf3 = XGBClassifier(random_state=1)   
 
-First, we need to deal with the class imbalance of 69% (Y) and 31% (N) before model development process.
+First, we need to deal with the class imbalance of 69% (Y) and 31% (N) before diving into model development process.
 
      Y    0.687296
      N    0.312704
