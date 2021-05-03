@@ -6,7 +6,8 @@
 House Loan Prediction (Python)
 
 **Jupyter Notebook: [Model EDA, Training and Testing](https://github.com/vbabashov/loan-classification/blob/main/notebooks/loan_prediction.ipynb)**
-**Object Oriented Programming: **
+
+**Object Oriented Programming: [.py file](https://github.com/vbabashov/loan-classification/blob/main/models/model.py) **
 
 ### Problem Statement:
 
