@@ -15,7 +15,7 @@ from sklearn.pipeline import Pipeline
 
 
 from sklearn.metrics import accuracy_score, roc_auc_score, classification_report, \
-                            confusion_matrix, roc_curve, matthews_corrcoef
+                            confusion_matrix, roc_curve, matthews_corrcoef, balanced_accuracy_score
 
 from sklearn.dummy import DummyClassifier
 from xgboost import XGBClassifier
@@ -148,8 +148,6 @@ class Data:
         self.feature_test = X_test
         self.target_test = y_test
 
-
-
 class ModelContainer:
     def __init__(self, models=[]):#, default_num_iters=10, verbose_lvl=0):
         '''initializes model list and dicts'''
@@ -169,7 +167,7 @@ class ModelContainer:
         self.models.append(model)
 
         
-    def cross_validate(self, data):
+    def cross_validate(self, df):
         '''cross validate models using 5x2Cv nested cross-validation'''
         
         clf1 = LogisticRegression(random_state=1)
@@ -212,8 +210,8 @@ class ModelContainer:
     
         for name, gs_est in (self.gridcvs.items()):
             nested_score = cross_val_score(gs_est, 
-                                           X=data.feature_train, 
-                                           y=data.target_train,                                            
+                                           X=df.feature_train, 
+                                           y=df.target_train,                                            
                                            cv=outer_cv,
                                            n_jobs=-1)   
     
@@ -221,10 +219,8 @@ class ModelContainer:
 
         
         self.best_algorithm = max(self.mean_score, key=self.mean_score.get)
-        
-        
          
-    def tune_best_model(self, data):
+    def tune_best_model(self, df):
         '''This function performs hyperparameter tuning on the whole training set with the best algorithm '''
         gcv_model_select = GridSearchCV(estimator=self.best_algorithm,
                                         param_grid=self.parameters[self.best_algorithm],
@@ -234,7 +230,7 @@ class ModelContainer:
                                         verbose=0,
                                         refit=True)
 
-        gcv_model_select.fit(data.feature_train,data.target_train)
+        gcv_model_select.fit(df.feature_train,df.target_train)
             
         self.best_model = gcv_model_select.best_estimator_
         self.best_score = gcv_model_select.best_score_
@@ -262,28 +258,28 @@ class ModelContainer:
             return "Feature importances do not exist for given model"
 
         
-    def print_summary(self,data):
+    def print_summary(self,df):
         '''prints summary of models, best model, and feature importance'''
         print('\nModel Summaries:')
         print('\nBest Model:', models.best_model)
-        train_roc = roc_auc_score(data.target_train, self.best_model.predict_proba(data.feature_train)[:, 1])
-        test_roc  = roc_auc_score(data.target_test,  self.best_model.predict_proba(data.feature_test)[:, 1])
+        train_roc = roc_auc_score(df.target_train, self.best_model.predict_proba(df.feature_train)[:, 1])
+        test_roc  = roc_auc_score(df.target_test,  self.best_model.predict_proba(df.feature_test)[:, 1])
         print('\nAUC of Train Set:', train_roc)
         print('\nAUC of Test Set:', test_roc)
-        print ('\nMatthews Correlation Coefficient', matthews_corrcoef(data.target_test, self.best_model.predict(data.feature_test)))   
-        print('\nFeature Importances:\n', self.get_feature_importance(models.best_model, data.feature_train.columns))
-        feature_importances = self.get_feature_importance(models.best_model, data.feature_train.columns)
+        print ('\nMatthews Correlation Coefficient', matthews_corrcoef(df.target_test, self.best_model.predict(df.feature_test)))   
+        print ('\nBalanced Accuracy Score:', balanced_accuracy_score(df.target_test, self.best_model.predict(df.feature_test)))
+        print('\nFeature Importances:\n', self.get_feature_importance(models.best_model, df.feature_train.columns))
+        feature_importances = self.get_feature_importance(models.best_model, df.feature_train.columns)
         feature_importances.plot.bar()
         plt.show()
         
         print ('\nConfusion Matrix:')
-        confmat=confusion_matrix(data.target_test, self.best_model.predict(data.feature_test))
+        confmat=confusion_matrix(df.target_test, self.best_model.predict(df.feature_test))
         fig, ax = plot_confusion_matrix(conf_mat=confmat, show_absolute=True, show_normed=True, figsize=(5,5))
-        
-        fpr, tpr, thresholds = roc_curve(data.target_test, self.best_model.predict_proba(data.feature_test)[:,1])
+        fpr, tpr, thresholds = roc_curve(df.target_test, self.best_model.predict_proba(df.feature_test)[:,1])
         plt.figure(figsize=(8, 6))
         # Plot Random Forest Classifier ROC
-        plt.plot(fpr, tpr, label='Random Forest (area = %0.2f)' % roc_auc_score(data.target_test,  self.best_model.predict_proba(data.feature_test)[:, 1]))
+        plt.plot(fpr, tpr, label='Random Forest (area = %0.2f)' % roc_auc_score(df.target_test,  self.best_model.predict_proba(df.feature_test)[:, 1]))
         # Plot Base Rate ROC
         plt.plot([0,1], [0,1],label='Base Rate')
         plt.xlim([0.0, 1.0])
@@ -295,7 +291,7 @@ class ModelContainer:
 
 
 if __name__ == '__main__':
-
+    
     #define number of processors to use for parallel runs
     num_procs = 4
 
@@ -325,4 +321,4 @@ if __name__ == '__main__':
     models.tune_best_model(data)
 
     #Summarize results
-    models.print_summary(data)
+    models.print_summary(data)    
