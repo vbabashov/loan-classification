@@ -1,5 +1,6 @@
+
 <p align="center">
-   <img src="https://user-images.githubusercontent.com/26305084/116883974-338a3e80-abf4-11eb-808e-70f3e211149d.png" />
+   <img src="https://user-images.githubusercontent.com/26305084/116889126-3851f100-abfa-11eb-8c16-87fbf6f02085.jpg" />
 </p>
 
 # loan-classification
@@ -9,9 +10,7 @@ House Loan Prediction (Python)
 
 ### Problem Statement:
 
-Data Source: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/
-
-Dream Housing Finance company provides mortgage lending solutions to home buyers. Using this partial dataset, the company wants to automate the loan eligibility process (in real-time) based on customer information provided while filling and submitting an online application. These details include Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To this end, I'll explore three classification models in this notebook. 
+[Dream Housing Finance](https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/) company provides mortgage lending solutions to home buyers. Using this partial dataset, the company wants to automate the loan eligibility process (in real-time) based on customer information provided while filling and submitting an online application. These details include Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To this end, I'll explore three classification models in this notebook. 
 
 
 ### Exploratory Data Analysis (EDA)
