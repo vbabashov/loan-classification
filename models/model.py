@@ -149,9 +149,10 @@ class Data:
         self.target_test = y_test
 
 class ModelContainer:
-    def __init__(self, models=[]):#, default_num_iters=10, verbose_lvl=0):
-        '''initializes model list and dicts'''
-        self.models = models
+  
+   '''initializes models, parameters and score lists/dicts'''
+    def __init__(self):
+       
         self.best_algorithm = None
         self.best_model = None
         self.predictions = None
