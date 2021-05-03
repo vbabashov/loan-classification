@@ -40,7 +40,6 @@ class Data:
     
     '''create dataframe'''
     def __init__(self, data_file, cat_cols, num_cols, label_col, id_col):
-    
         '''create new copies instead of references'''
         self.cat_cols = list(cat_cols)
         self.num_cols = list(num_cols)
@@ -147,20 +146,16 @@ class Data:
         self.target_train = y_train_sm
         self.feature_test = X_test
         self.target_test = y_test
-
 class ModelContainer:
-  
-   '''initializes models, parameters and score lists/dicts'''
-    def __init__(self):
-       
+    
+    '''initializes models, dicts'''
+    def __init__(self):  
         self.best_algorithm = None
         self.best_model = None
         self.predictions = None
         self.mean_score = {}
         self.gridcvs = {}
         self.parameters = {}
-        #self.default_num_iters = default_num_iters
-        #self.verbose_lvl = verbose_lvl
     
     
     def add_model(self, model):
@@ -169,8 +164,7 @@ class ModelContainer:
 
         
     def cross_validate(self, df):
-        '''cross validate models using 5x2Cv nested cross-validation'''
-        
+        '''cross validate models using 5x2Cv nested cross-validation'''   
         clf1 = LogisticRegression(random_state=1)
         clf2 = RandomForestClassifier(random_state=1)
         clf3 = XGBClassifier(random_state=1)
@@ -220,6 +214,8 @@ class ModelContainer:
 
         
         self.best_algorithm = max(self.mean_score, key=self.mean_score.get)
+        
+        
          
     def tune_best_model(self, df):
         '''This function performs hyperparameter tuning on the whole training set with the best algorithm '''
@@ -277,8 +273,9 @@ class ModelContainer:
         print ('\nConfusion Matrix:')
         confmat=confusion_matrix(df.target_test, self.best_model.predict(df.feature_test))
         fig, ax = plot_confusion_matrix(conf_mat=confmat, show_absolute=True, show_normed=True, figsize=(5,5))
+        
         fpr, tpr, thresholds = roc_curve(df.target_test, self.best_model.predict_proba(df.feature_test)[:,1])
-        plt.figure(figsize=(8, 6))
+        plt.figure(figsize=(7, 5))
         # Plot Random Forest Classifier ROC
         plt.plot(fpr, tpr, label='Random Forest (area = %0.2f)' % roc_auc_score(df.target_test,  self.best_model.predict_proba(df.feature_test)[:, 1]))
         # Plot Base Rate ROC
@@ -322,4 +319,4 @@ if __name__ == '__main__':
     models.tune_best_model(data)
 
     #Summarize results
-    models.print_summary(data)    
+    models.print_summary(data)
