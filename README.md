@@ -1,3 +1,6 @@
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/26305084/116883974-338a3e80-abf4-11eb-808e-70f3e211149d.png" />
+</p>
 
 # loan-classification
 House Loan Prediction (Python)
