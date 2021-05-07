@@ -11,7 +11,7 @@ House Loan Prediction (Python)
 
 ### Business Case:
 
-[Dream Housing Finance](https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/) company provides mortgage lending solutions to home buyers. Using this partial dataset, the company wants to automate the loan eligibility process (in real-time) based on customer information upon submission of the online application. These details include Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. The goal is to classify the applications into Loan and No Loan classes. To this end, I'll explore three classification models in this notebook. 
+[Dream Housing Finance](https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/) company provides mortgage lending solutions to home buyers. Using this partial dataset, the company wants to automate the loan eligibility process based on customer information upon submission of the online application and determine whether person will be approved for loan or not. These details include Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others.To this end, I'll explore three classification models in this notebook. 
 
 
 ### Exploratory Data Analysis (EDA)
